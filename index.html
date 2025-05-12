@@ -7,27 +7,31 @@
     body {
       background: linear-gradient(to right, #fff0f5, #ffe4e1);
       font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-direction: column;
       text-align: center;
-      overflow-x: hidden;
-      padding-top: 30px;
     }
-    img.photo {
-  width: 180px;
-  height: auto;
-  border: none;
-  box-shadow: none;
-  object-fit: contain;
-}
 
-    
+    img.photo {
+      width: 180px;
+      height: auto;
+      border: none;
+      box-shadow: none;
+      object-fit: contain;
+    }
 
     .main-container {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 40px;
-      margin-top: 30px;
       flex-wrap: wrap;
+      margin-top: 50px; /* Increased space from the top of the page */
     }
 
     .cake {
@@ -47,7 +51,7 @@
     h1.message {
       font-size: 28px;
       color: #e6005c;
-      margin-top: 30px;
+      margin-bottom: 40px;  /* Added space between message and the images */
       opacity: 0;
       animation: fadeIn 2s ease-in 1.5s forwards;
     }
@@ -138,6 +142,9 @@
 </head>
 <body>
 
+  <!-- Birthday Message -->
+  <h1 class="message">🎉 Happy Birthday Cutie Shikha 💖🎂😍</h1>
+
   <!-- Overlay -->
   <div id="overlay" onclick="startExperience()">
     🎵 Tap anywhere to begin the surprise 🎉
@@ -163,9 +170,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Birthday Message -->
-  <h1 class="message">🎉 Happy Birthday Cutie Shikha 💖🎂😍</h1>
 
   <!-- Audio -->
   <audio id="song">
